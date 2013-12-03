@@ -1,0 +1,140 @@
+<!doctype html>
+<html><head>
+<title>Transitions</title>
+<meta charset="utf-8" />
+<meta name="description" content="Project 11" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+
+<style>
+h1,h2 {text-align:center;}
+
+.photo1{
+  margin:2em;
+ display: block;
+    margin-left: auto;
+    margin-right: auto;
+  -webkit-transition:all 0.5 ease-in-out;
+}
+.photo1:hover{
+-webkit-transform:rotate(180deg);
+}
+
+.photo2{
+  margin:2em;
+ display: block;
+    margin-left: auto;
+    margin-right: auto;
+  -webkit-transition:all 0.5 ease-in-out;
+}
+.photo2:hover{
+-webkit-transform:scale(1.5);
+}
+
+.photo3{
+  margin:2em;
+ display: block;
+    margin-left: auto;
+    margin-right: auto;
+  -webkit-transition:all 0.5 ease-in-out;
+}
+.photo3:hover{
+-webkit-transform:skewX(20deg);
+}
+
+.box1{
+  display:inline-block;
+  margin:2em;
+ display: block;
+    margin-left: auto;
+    margin-right: auto;
+  width:300px;
+  height:300px;
+ background-color:orange;
+box-shadow:0 0 8px 8px black;
+  -webkit-transition:all 0.5 ease-in-out;
+}
+.box1:hover{
+  background-color:black;
+box-shadow:0 0 8px 8px orange;
+}
+
+.box2{
+  margin:2em;
+ display: block;
+    margin-left: auto;
+    margin-right: auto;
+  width:300px;
+  height:300px;
+ background-color:blue;
+  -webkit-transition:all 0.5 ease-in-out;
+}
+.box2:hover{
+-webkit-transform:rotate(25deg) scale(1.05);
+  -webkit-transform-origin:top right;
+}
+
+header{
+text-align: center;
+font-family: serif;
+font-weight: normal;
+text-transform: uppercase;
+border-bottom: 1px solid #57b1dc;
+margin-top: 30px;
+font-size: 2em;
+}
+</style>
+</head>
+
+
+
+<main>
+<body>
+
+<header>
+Project 11
+</header>
+
+<h1>Transitions</h1>
+<h2>Photo 1</h2>
+<img class="photo1"alt="Acer-Palmatum" src="p5-acer-palmatum.jpg"> 
+
+<h2>Photo 2</h2>
+<img class="photo2" alt="Juniper" src="p5-juniper.jpg"> 
+
+<h2>Photo 3</h2>
+
+<img class="photo3" alt="Forrest Gump Photo" src="Forrest_Gump.jpg"> 
+
+<h2>Box 1</h2>
+  <div class="box1"></div>
+
+<h2>Box 2</h2>
+  <div class="box2"></div>
+
+</main>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

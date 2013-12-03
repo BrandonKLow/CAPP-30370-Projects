@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Project 13: Javascript</title>
+  <style>
+#MouseEvents{ 
+  margin:2em 0 2em 0;
+  width:150px;
+  height:150px;
+ background-color:orange;
+box-shadow:0 0 8px 8px black;
+}
+    html {margin:2em; font-family:Helvetica, Arial, sans-serif;}
+    h1 {margin:0;}
+    h2 {color:#369;}
+  </style>
+</head>
+<body>
+  <header><h1>Project 13</h1></header>
+
+  <h2>#1</h2>
+     <button id="my_button">Alert</button>
+  <script>
+  var myButton = document.getElementById('my_button');
+    
+
+    myButton.addEventListener("click", function() {
+	alert("ALERT!");
+});
+
+  </script>
+  
+  <h2>#2</h2>
+  <button id="my_button2">Prompt</button>
+  <script>
+
+         var myButton2 = document.getElementById('my_button2');
+    
+    function hit(){
+    var word=prompt('What is your name?');
+  for(i = 0; i < 5; i++) { // i = i + 1
+    console.log(word);
+}
+    }
+    
+  myButton2.addEventListener("click", hit);
+  </script>
+    
+  <h2>#3</h2>
+    <script>
+  var array1=['Red','Orange','Yellow','Green','Blue','Indigo','Violet'];
+  
+   for(i = 0; i < array1.length; i++) { 
+    document.write(array1[i]);
+    document.write('<br>');
+  }
+  </script>
+<h2>#4 Mouse Events</h2>
+    <div id="MouseEvents"></div>
+    <script>
+  var Mouse = document.getElementById('MouseEvents');
+     
+      Mouse.addEventListener("mouseover",function(){      
+    console.log('Mouse entered the box');
+  });
+
+      Mouse.addEventListener("mouseout",function(){      
+    console.log('Mouse left the box');
+  });
+      </script>
+
+  <h2>#5</h2>
+  First <input type="text" id="first"> <br>
+  Second <input type="text" id="second"><br>
+    <button id="check">Check</button>
+    <script>
+  var my_input1 = document.getElementById('first');
+  var my_input2 = document.getElementById('second');
+  var myButton5 = document.getElementById('check');
+  myButton5.addEventListener("click", function(){
+if(my_input1.value === my_input2.value){
+    alert('true');
+  } else {
+    alert('false');
+  }
+      });
+      
+ 
+  </script>
+  
+  </body>
+</html>
+
+
+
+
+
+
